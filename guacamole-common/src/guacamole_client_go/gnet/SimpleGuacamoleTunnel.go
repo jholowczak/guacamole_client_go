@@ -26,8 +26,9 @@ type SimpleGuacamoleTunnel struct {
 
 // NewSimpleGuacamoleTunnel Construct function
 func NewSimpleGuacamoleTunnel(socket GuacamoleSocket) (ret GuacamoleTunnel) {
+	u, _ := guid.NewV4()
 	one := SimpleGuacamoleTunnel{
-		uuid:   guid.NewV4(),
+		uuid:   u,
 		socket: socket,
 	}
 	one.AbstractGuacamoleTunnel = NewAbstractGuacamoleTunnel(&one)
