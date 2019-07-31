@@ -1,8 +1,8 @@
 package gio
 
 import (
-	exp "guacamole_client_go"
-	"guacamole_client_go/gprotocol"
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gprotocol"
 )
 
 // GuacamoleWriter Provides abstract and raw character write access

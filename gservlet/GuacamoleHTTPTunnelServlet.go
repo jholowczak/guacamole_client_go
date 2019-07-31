@@ -3,9 +3,9 @@ package gservlet
 import (
 	"fmt"
 	logger "github.com/Sirupsen/logrus"
-	exp "guacamole_client_go"
-	"guacamole_client_go/gio"
-	"guacamole_client_go/gnet"
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gio"
+	"github.com/jholowczak/guacamole_client_go/gnet"
 	"strings"
 )
 

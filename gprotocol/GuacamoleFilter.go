@@ -1,7 +1,7 @@
 package gprotocol
 
 import (
-	exp "guacamole_client_go"
+	exp "github.com/jholowczak/guacamole_client_go"
 )
 
 // GuacamoleFilter *

@@ -2,8 +2,8 @@ package gio
 
 import (
 	"fmt"
-	exp "guacamole_client_go"
-	"guacamole_client_go/gprotocol"
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gprotocol"
 	"net"
 	"strconv"
 )

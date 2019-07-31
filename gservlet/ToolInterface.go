@@ -1,7 +1,7 @@
 package gservlet
 
 import (
-	"guacamole_client_go/gnet"
+	"github.com/jholowczak/guacamole_client_go/gnet"
 )
 
 // HTTPServletRequestInterface convert http request

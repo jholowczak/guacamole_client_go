@@ -1,8 +1,8 @@
 package gnet
 
 import (
-	exp "guacamole_client_go"
-	"guacamole_client_go/gio"
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gio"
 )
 
 // AbstractGuacamoleTunnel ==> GuacamoleTunnel

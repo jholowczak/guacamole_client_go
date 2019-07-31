@@ -2,8 +2,8 @@ package gnet
 
 import (
 	"fmt"
-	exp "guacamole_client_go"
-	"guacamole_client_go/gio"
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gio"
 	"net"
 	"time"
 )

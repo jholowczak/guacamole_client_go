@@ -2,9 +2,9 @@ package gwebsocket
 
 import (
 	ws "github.com/gorilla/websocket"
-	gc "guacamole_client_go"
-	gn "guacamole_client_go/gnet"
-	gp "guacamole_client_go/gprotocol"
+	gc "github.com/jholowczak/guacamole_client_go"
+	gn "github.com/jholowczak/guacamole_client_go/gnet"
+	gp "github.com/jholowczak/guacamole_client_go/gprotocol"
 	"strconv"
 	"sync"
 	"time"

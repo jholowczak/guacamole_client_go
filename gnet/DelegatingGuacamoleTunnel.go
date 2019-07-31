@@ -1,9 +1,9 @@
 package gnet
 
 import (
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gio"
 	guid "github.com/satori/go.uuid"
-	exp "guacamole_client_go"
-	"guacamole_client_go/gio"
 )
 
 // DelegatingGuacamoleTunnel ==> GuacamoleTunnel

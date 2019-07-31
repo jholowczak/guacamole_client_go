@@ -4,9 +4,9 @@ package gnet
 // Avoid cross depends
 
 import (
-	exp "guacamole_client_go"
-	"guacamole_client_go/gio"
-	"guacamole_client_go/gprotocol"
+	exp "github.com/jholowczak/guacamole_client_go"
+	"github.com/jholowczak/guacamole_client_go/gio"
+	"github.com/jholowczak/guacamole_client_go/gprotocol"
 )
 
 // FilteredGuacamoleSocket ==> GuacamoleSocket
