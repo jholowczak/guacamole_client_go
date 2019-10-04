@@ -22,8 +22,10 @@ type GuacamoleWebSocketTunnelEndpoint struct {
 }
 
 func CreateTunnelEndpoint(conn *ws.Conn, socket *gn.GuacamoleTunnel) (ret *GuacamoleWebSocketTunnelEndpoint) {
-	ret.tunnel = socket
-	ret.conn = conn
+	ret = &GuacamoleWebSocketTunnelEndpoint{
+		tunnel: socket,
+		conn:   conn,
+	}
 	return
 }
 
