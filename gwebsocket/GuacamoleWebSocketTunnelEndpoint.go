@@ -16,12 +16,12 @@ const (
 )
 
 type GuacamoleWebSocketTunnelEndpoint struct {
-	tunnel gn.GuacamoleTunnel
+	tunnel *gn.GuacamoleTunnel
 	conn   *ws.Conn
 	mu     sync.Mutex
 }
 
-func CreateTunnelEndpoint(conn *ws.Conn, socket gn.GuacamoleTunnel) (ret GuacamoleWebSocketTunnelEndpoint) {
+func CreateTunnelEndpoint(conn *ws.Conn, socket *gn.GuacamoleTunnel) (ret *GuacamoleWebSocketTunnelEndpoint) {
 	ret.tunnel = socket
 	ret.conn = conn
 	return
@@ -62,7 +62,7 @@ func (te *GuacamoleWebSocketTunnelEndpoint) SendGuacamoleInstruction(instruction
 	return
 }
 
-func (te *GuacamoleWebSocketTunnelEndpoint) Tunnel() gn.GuacamoleTunnel {
+func (te *GuacamoleWebSocketTunnelEndpoint) Tunnel() *gn.GuacamoleTunnel {
 	return te.tunnel
 }
 
