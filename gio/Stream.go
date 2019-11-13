@@ -2,7 +2,6 @@ package gio
 
 import (
 	"fmt"
-	logger "github.com/Sirupsen/logrus"
 	"net"
 	"sync"
 	"time"
@@ -38,7 +37,6 @@ func (opt *Stream) errClose(err error) {
 	opt.core.Close()
 	opt.core = nil
 	opt.err = err
-	logger.Debug("close socket")
 }
 
 func (opt *Stream) Write(data []byte) (n int, err error) {
