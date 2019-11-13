@@ -1,8 +1,8 @@
 package gservlet
 
 import (
-	logger "github.com/Sirupsen/logrus"
 	"github.com/jholowczak/guacamole_client_go/gnet"
+	logger "github.com/sirupsen/logrus"
 	"sync"
 	"time"
 )
