@@ -2,10 +2,10 @@ package gservlet
 
 import (
 	"fmt"
-	logger "github.com/Sirupsen/logrus"
 	exp "github.com/jholowczak/guacamole_client_go"
 	"github.com/jholowczak/guacamole_client_go/gio"
 	"github.com/jholowczak/guacamole_client_go/gnet"
+	logger "github.com/sirupsen/logrus"
 	"strings"
 )
 
