@@ -18,13 +18,14 @@ const (
 type GuacamoleWebSocketTunnelEndpoint struct {
 	tunnel *gn.GuacamoleTunnel
 	conn   *ws.Conn
-	mu     sync.Mutex
+	mu     *sync.Mutex
 }
 
 func CreateTunnelEndpoint(conn *ws.Conn, socket *gn.GuacamoleTunnel) (ret *GuacamoleWebSocketTunnelEndpoint) {
 	ret = &GuacamoleWebSocketTunnelEndpoint{
 		tunnel: socket,
 		conn:   conn,
+		mu:     &sync.Mutex{},
 	}
 	return
 }
