@@ -2,6 +2,8 @@ module github.com/jholowczak/guacamole_client_go
 
 go 1.13
 
+replace github.com/Sirupsen/logrus => github.com/sirupsen/logrus v1.4.2
+
 require (
 	github.com/gorilla/websocket v1.4.1
 	github.com/satori/go.uuid v1.2.0
